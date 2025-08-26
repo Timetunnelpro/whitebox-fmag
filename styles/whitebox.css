@@ -1,0 +1,12 @@
+.whitebox.sheet .tabs { border-bottom: 1px solid var(--color-border-light-primary); margin-bottom: 6px; }
+.whitebox.sheet .tabs .item { padding: 4px 8px; cursor: pointer; }
+.whitebox.sheet .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.whitebox.sheet .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.whitebox.sheet .grid-6 { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; }
+.whitebox.sheet .row { display: flex; gap: 8px; align-items: center; }
+.whitebox.sheet input[type="text"],
+.whitebox.sheet input[type="number"],
+.whitebox.sheet textarea { width: 100%; }
+.whitebox.sheet table { width: 100%; border-collapse: collapse; }
+.whitebox.sheet th, .whitebox.sheet td { border: 1px solid var(--color-border-light-primary); padding: 4px; text-align: center; }
+.whitebox.sheet .section { margin-bottom: 10px; }
