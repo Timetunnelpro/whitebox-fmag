@@ -1,1 +1,91 @@
+<form class="whitebox sheet" autocomplete="off">
+<header class="sheet-header">
+<h1><input name="name" type="text" value="{{actor.name}}" placeholder="{{localize 'WBFMAG.Name'}}"/></h1>
+</header>
 
+
+<nav class="tabs" data-group="primary">
+<a class="item" data-tab="main">{{localize 'WBFMAG.Main'}}</a>
+<a class="item" data-tab="combat">{{localize 'WBFMAG.Combat'}}</a>
+<a class="item" data-tab="spells">{{localize 'WBFMAG.Spells'}}</a>
+<a class="item" data-tab="inventory">{{localize 'WBFMAG.Inventory'}}</a>
+<a class="item" data-tab="details">{{localize 'WBFMAG.Details'}}</a>
+</nav>
+
+
+<section class="content">
+<!-- TAB: MAIN -->
+<div class="tab" data-group="primary" data-tab="main">
+<div class="grid-3 section">
+<div>
+<label>{{localize 'WBFMAG.Class'}}</label>
+<input type="text" name="system.identity.class" value="{{system.identity.class}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.Race'}}</label>
+<input type="text" name="system.identity.race" value="{{system.identity.race}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.Level'}}</label>
+<input type="number" name="system.identity.level" value="{{system.identity.level}}"/>
+</div>
+</div>
+
+
+<div class="grid-3 section">
+<div>
+<label>{{localize 'WBFMAG.XPCurrent'}}</label>
+<input type="number" name="system.identity.xp.current" value="{{system.identity.xp.current}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.XPNeeded'}}</label>
+<input type="number" name="system.identity.xp.needed" value="{{system.identity.xp.needed}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.XPBonus'}}</label>
+<input type="number" name="system.identity.xp.bonus" value="{{system.identity.xp.bonus}}"/>
+</div>
+</div>
+
+
+<div class="grid-3 section">
+<div>
+<label>{{localize 'WBFMAG.Alignment'}}</label>
+<input type="text" name="system.identity.alignment" value="{{system.identity.alignment}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.SavingThrow'}}</label>
+<input type="number" name="system.identity.savingThrow" value="{{system.identity.savingThrow}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.Modifiers'}}</label>
+<input type="text" name="system.identity.modifiers" value="{{system.identity.modifiers}}"/>
+</div>
+</div>
+
+
+<div class="grid-3 section">
+<div>
+<label>{{localize 'WBFMAG.AC'}}</label>
+<input type="number" name="system.defense.ac.value" value="{{system.defense.ac.value}}"/>
+<div class="row">
+<label>{{localize 'WBFMAG.Shield'}}</label>
+<input type="checkbox" name="system.defense.ac.shieldEquipped" {{checked system.defense.ac.shieldEquipped}}/>
+<label>{{localize 'WBFMAG.Helmet'}}</label>
+<input type="checkbox" name="system.defense.ac.helmetEquipped" {{checked system.defense.ac.helmetEquipped}}/>
+</div>
+</div>
+<div>
+<label>{{localize 'WBFMAG.HitDice'}}</label>
+<input type="text" name="system.defense.hitDice" value="{{system.defense.hitDice}}"/>
+</div>
+<div>
+<label>{{localize 'WBFMAG.HP'}}</label>
+<div class="row">
+<input type="number" name="system.defense.hp.value" value="{{system.defense.hp.value}}"/>
+<span>/</span>
+<input type="number" name="system.defense.hp.max" value="{{system.defense.hp.max}}"/>
+</div>
+</div>
+</div>
+</form>
