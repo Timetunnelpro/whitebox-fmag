@@ -1,1 +1,48 @@
+<form class="whitebox sheet" autocomplete="off">
+<header class="sheet-header">
+<h1><input name="name" type="text" value="{{item.name}}" placeholder="Item Name"/></h1>
+</header>
+<section class="content">
+{{#if (eq item.type 'weapon')}}
+<div class="section">
+<div class="row">Damage <input name="system.damage" value="{{system.damage}}"/></div>
+<div class="row">Bonus <input type="number" name="system.bonus" value="{{system.bonus}}"/></div>
+<div class="row"><button type="button" class="wb-attack">{{localize 'WBFMAG.Attack'}}</button></div>
+</div>
+{{/if}}
 
+
+{{#if (eq item.type 'armor')}}
+<div class="section">
+<div class="row">Base AC <input type="number" name="system.baseAC" value="{{system.baseAC}}"/></div>
+<div class="row">Shield <input type="checkbox" name="system.shield" {{checked system.shield}}/></div>
+<div class="row">Helmet <input type="checkbox" name="system.helmet" {{checked system.helmet}}/></div>
+</div>
+{{/if}}
+
+
+{{#if (eq item.type 'gear')}}
+<div class="section">
+<div class="row">Qty <input type="number" name="system.qty" value="{{system.qty}}"/></div>
+<div class="row">Value <input type="number" name="system.value" value="{{system.value}}"/></div>
+<div class="row">Weight <input type="number" name="system.weight" value="{{system.weight}}"/></div>
+</div>
+{{/if}}
+
+
+{{#if (eq item.type 'spell')}}
+<div class="section">
+<div class="row">Level <input type="number" name="system.level" value="{{system.level}}" min="1" max="6"/></div>
+<div class="row">Prepared <input type="checkbox" name="system.prepared" {{checked system.prepared}}/></div>
+<div class="row">Notes <input type="text" name="system.notes" value="{{system.notes}}"/></div>
+</div>
+{{/if}}
+
+
+{{#if (eq item.type 'ability')}}
+<div class="section">
+<div class="row">Notes <input type="text" name="system.notes" value="{{system.notes}}"/></div>
+</div>
+{{/if}}
+</section>
+</form>
