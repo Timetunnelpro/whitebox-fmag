@@ -1,3 +1,65 @@
 {
-  "Actor": {}
+"Actor": {
+"types": {
+"character": {},
+"npc": {}
+},
+"templates": {
+"base": {
+"identity": {
+"class": "",
+"race": "",
+"level": 1,
+"xp": { "current": 0, "needed": 2000, "bonus": 0 },
+"alignment": "",
+"savingThrow": 15,
+"modifiers": ""
+},
+"defense": {
+"ac": { "value": 10, "fromArmor": 0, "shieldEquipped": false, "helmetEquipped": false },
+"hp": { "value": 6, "max": 6 },
+"hitDice": "1d6"
+},
+"abilities": {
+"str": { "score": 10, "mod": 0 },
+"dex": { "score": 10, "mod": 0 },
+"con": { "score": 10, "mod": 0 },
+"int": { "score": 10, "mod": 0 },
+"wis": { "score": 10, "mod": 0 },
+"cha": { "score": 10, "mod": 0 }
+},
+"combat": {
+"toHitMatrix": {
+"toHit": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+"dac": [9, 8, 7, 6, 5, 4, 3, 2, 1, 0],
+"aac": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+}
+},
+"magic": {
+"spells": { "1": [], "2": [], "3": [], "4": [], "5": [], "6": [] }
+},
+"inventory": {
+"currency": { "gp": 0, "sp": 0, "cp": 0, "gems": 0 }
+},
+"details": {
+"background": "",
+"age": "",
+"languages": "",
+"height": "",
+"weight": "",
+"allies": "",
+"enemies": ""
+}
+}
+}
+},
+"Item": {
+"types": {
+"weapon": { "damage": "1d6", "bonus": 0, "properties": "" },
+"armor": { "baseAC": 10, "type": "none", "shield": false, "helmet": false },
+"gear": { "qty": 1, "value": 0, "weight": 0 },
+"spell": { "level": 1, "prepared": false, "notes": "" },
+"ability": { "notes": "" }
+}
+}
 }
