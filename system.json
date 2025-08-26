@@ -1,5 +1,23 @@
 {
-  "id": "whitebox-fmag",
-  "title": "WhiteBox FMAG",
-  "version": "0.1.0"
+"id": "whitebox-fmag",
+"title": "WhiteBox FMAG",
+"description": "White Box: Fantastic Medieval Adventure Game — lightweight system for Foundry VTT.",
+"version": "0.1.0",
+"compatibility": { "minimum": "11", "verified": "11" },
+"authors": [{ "name": "You & ChatGPT" }],
+"esmodules": ["module/whitebox.js"],
+"styles": ["styles/whitebox.css"],
+"packs": [],
+"languages": [{ "lang": "en", "name": "English", "path": "lang/en.json" }],
+"documentTypes": {
+"Actor": ["character", "npc"],
+"Item": ["weapon", "armor", "gear", "spell", "ability"]
+},
+"template": "template.json",
+"gridDistance": 5,
+"gridUnits": "ft",
+"primaryTokenAttribute": "defense.hp",
+"secondaryTokenAttribute": "defense.ac",
+"license": "MIT",
+"manifestPlusVersion": "1.2.0"
 }
