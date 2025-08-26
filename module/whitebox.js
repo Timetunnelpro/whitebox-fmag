@@ -1,0 +1,1 @@
+// WhiteBox FMAG JS bootstrap
